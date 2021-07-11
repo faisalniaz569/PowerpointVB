@@ -1,0 +1,10 @@
+Sub AddSlideAfterCurrentSlide()
+
+    Dim sld As Slide
+    Dim idxcurrentSlide As Byte
+    
+    idxcurrentSlide = Application.ActiveWindow.View.Slide.SlideIndex
+    Set sld = ActivePresentation.Slides.Add(idxcurrentSlide, ppLayoutBlank)
+    
+
+End Sub
