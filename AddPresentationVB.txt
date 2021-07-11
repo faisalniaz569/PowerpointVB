@@ -1,0 +1,5 @@
+Sub addBlankPresentation()
+
+	Presentations.Add
+
+End Sub
