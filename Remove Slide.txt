@@ -1,0 +1,8 @@
+Sub removeSlide()
+
+    Dim bsIdIndex As Byte
+    
+    bsIdIndex = Application.ActiveWindow.View.Slide.SlideIndex
+    ActivePresentation.Slides(bsIdIndex).Delete
+
+End Sub
