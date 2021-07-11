@@ -1,0 +1,7 @@
+Sub OpenPPT()
+    
+    Dim ppt As Presentation
+    
+    Set ppt = Presentations.Open("F:\Powerpoint information\Using PowerPoint.pptx")
+
+End Sub
