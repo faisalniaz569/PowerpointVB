@@ -1,0 +1,5 @@
+Sub SavePPT()
+
+	ActivePresentaton.Save
+
+EndSub
