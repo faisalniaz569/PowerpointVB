@@ -1,0 +1,9 @@
+Sub addBlankSlide()
+
+    Dim sld As Slide
+    Dim sldCount As Integer
+    
+    sldCount = ActivePresentation.Slides.Count
+    Set sld = ActivePresentation.Slides.Add(sldCount + 1, ppLayoutBlank)
+    
+End Sub
