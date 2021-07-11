@@ -1,1 +1,5 @@
+Sub ClosePPT()
 
+	ActivePresentation.Close
+
+End Sub
