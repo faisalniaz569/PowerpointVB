@@ -1,16 +1,16 @@
-Private Sub CommandButton1_Click()
+Private Sub Slide1_Click()
 
     ActivePresentation.SlideShowWindow.View.GotoSlide 1
 
 End Sub
 
-Private Sub CommandButton2_Click()
+Private Sub Slide2_Click()
 
     ActivePresentation.SlideShowWindow.View.GotoSlide 2
 
 End Sub
 
-Private Sub CommandButton3_Click()
+Private Sub Slide3_Click()
 
     ActivePresentation.SlideShowWindow.View.GotoSlide 3
 
