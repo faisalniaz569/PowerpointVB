@@ -1,0 +1,5 @@
+Sub DuplicateSlide()
+
+    ActivePresentation.Slides(1).Duplicate
+    
+End Sub
