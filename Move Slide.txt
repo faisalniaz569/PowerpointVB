@@ -1,0 +1,5 @@
+Sub MoveSlide()
+
+    ActivePresentation.Slides(3).MoveTo topos:=1
+
+End Sub
