@@ -1,0 +1,11 @@
+Sub SavePresentationAsPDF()
+
+    Dim pptName As String
+    Dim PDFName As String
+    
+    pptName = ActivePresentation.FullName
+    PDFName = Left(pptName, InStr(pptName, ".")) & "PDF"
+    
+    ActivePresentation.ExportAsFixedFormat PDFName, 2
+
+End Sub
