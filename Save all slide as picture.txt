@@ -5,6 +5,8 @@ Sub Save_Slide_AS_Image()
     Dim oSlide As Slide
     Dim IScaleWidth As Long
     Dim IScaleHeight As Long
+    
+    On Error GoTo err_ImageSave
 
     sImagePath = "C:\Users\Windows\Desktop\Faisal\ppt image"
     For Each oSlide In ActivePresentation.Slides
@@ -12,4 +14,12 @@ Sub Save_Slide_AS_Image()
     oSlide.Export sImagePath & sImageName, "JPG"
     Next oSlide
 
+err_ImageSave:
+    
+    If Err > 0 Then
+    MsgBox Err.Description
+    End If
+
+
 End Sub
+        
