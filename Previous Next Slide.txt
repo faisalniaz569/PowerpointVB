@@ -1,0 +1,12 @@
+Sub Display_NextSlide()
+
+    ActivePresentation.SlideShowWindow.View.Next
+
+End Sub
+
+
+Sub Display_PrevSlide()
+
+    ActivePresentation.SlideShowWindow.View.Previous
+
+End Sub
