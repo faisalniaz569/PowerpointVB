@@ -1,0 +1,15 @@
+Sub Save_Slide_AS_Image()
+
+    Dim sImagePath As String
+    Dim sImageName As String
+    Dim oSlide As Slide
+    Dim IScaleWidth As Long
+    Dim IScaleHeight As Long
+
+    sImagePath = "C:\Users\Windows\Desktop\Faisal\ppt image"
+    For Each oSlide In ActivePresentation.Slides
+    sImageName = oSlide.Name & ".jpg"
+    oSlide.Export sImagePath & sImageName, "JPG"
+    Next oSlide
+
+End Sub
