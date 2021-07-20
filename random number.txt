@@ -1,0 +1,12 @@
+Sub RandomNumber(oShepe As Shape)
+
+    Dim max As Long
+    Dim random As Long
+    
+    max = 100
+    Randomize
+    
+    random = Int((max * Rnd) + 1)
+    oShepe.TextFrame.TextRange.Text = CStr(random)
+    
+End Sub
